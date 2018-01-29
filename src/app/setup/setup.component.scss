@@ -1,0 +1,32 @@
+.setup {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: rgba(46, 29, 108, 0.73);
+}
+.form{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+}
+h1{
+  text-align: center;
+  padding: 1rem;
+}
+button{
+  font-size: 150%;
+  background-color: rgba(57, 77, 114, 0.75);
+  color: aliceblue;
+  border: 1rem;
+  padding: 0.2rem;
+}
+input{
+  font-size: 150%;
+  color: rgba(57, 77, 114, 0.75);
+  background-color: aliceblue;
+  border: 0.1rem solid rgba(57, 77, 114, 0.75);
+  padding: 0.2rem;
+
+}

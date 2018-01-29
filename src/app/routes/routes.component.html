@@ -1,0 +1,14 @@
+<h1>This is routes</h1>
+<h2>
+    Pysäkin reitit:
+</h2>
+<div class="routes">
+    <ul>
+        <li *ngFor="let reitti of reittiTaulukko">
+            <a [href] = "placeUrl">{{reitti.name}}</a>
+            <p>{{reitti.route.longName}}</p>
+        </li>
+    </ul>
+    <iframe class="e2e-iframe-trusted-src" [src]='mapSource' width="600" height="450" frameborder="0"  allowfullscreen>
+    </iframe>
+</div>

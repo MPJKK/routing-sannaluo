@@ -1,0 +1,36 @@
+
+h1{
+  text-align: center;
+  color: rgba(46, 29, 108, 0.73);
+  padding: 2rem;
+}
+h2{
+  color: rgba(46, 29, 108, 0.73);
+  margin-left: 5rem;
+}
+li {
+  list-style-type: circle;
+}
+a{
+  color: rgba(46, 29, 108, 0.73);
+}
+p{
+  color: rgba(57, 77, 114, 0.75);
+}
+button{
+  font-size: 150%;
+  background-color: rgba(57, 77, 114, 0.75);
+  color: aliceblue;
+  border: 1rem;
+}
+iframe{
+  border: 0.1rem solid rgba(57, 77, 114, 0.75);
+
+}
+
+.routes{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
