@@ -6,7 +6,9 @@ h1{
 }
 h2{
   color: rgba(46, 29, 108, 0.73);
-  margin-left: 5rem;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 li {
   list-style-type: circle;
@@ -25,7 +27,9 @@ button{
 }
 iframe{
   border: 0.1rem solid rgba(57, 77, 114, 0.75);
-
+  padding: 0.05rem;
+background-color: rgba(57, 77, 114, 0.75);
+  margin-left: 4rem;
 }
 
 .routes{
@@ -33,4 +37,27 @@ iframe{
   justify-content: space-between;
   margin-left: 5rem;
   margin-right: 5rem;
+}
+agm-map {
+  height: 300px;
+
+}
+.agmMap {
+  padding: 0.05rem;
+  border: 0.1rem solid rgba(57, 77, 114, 0.75);
+  background-color: rgba(57, 77, 114, 0.75);
+}
+.title{
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding: 2rem;
+}
+
+.coming{
+  color: rgba(45, 126, 135, 0.82);
+}
+
+.going {
+  color: rgba(57, 77, 114, 0.75);
+
 }

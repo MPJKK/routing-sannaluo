@@ -16,6 +16,14 @@ export class RoutesComponent implements OnInit {
     mapSource: any;
     dangerousMapSource: any;
 
+    title = 'Satellite:';
+
+    route = '';
+
+
+   // satellite = 'satellite';
+
+
     constructor(private digitransitService: DigitransitService, private sanitizer: DomSanitizer) {
     }
 
@@ -30,9 +38,10 @@ export class RoutesComponent implements OnInit {
 
     ngOnInit() {
         this.digitransitService.getRoutes().subscribe(response => {
+            this.route = this.digitransitService.stopName;
             console.log(response.data['stops'][0].patterns);
             this.reittiTaulukko = response.data['stops'][0].patterns;
-            this.lat = response.data['stops'][0].lat;
+           this.lat = response.data['stops'][0].lat;
             this.lon = response.data['stops'][0].lon;
             this.placeUrl = 'https://maps.google.fi/maps/place/' + this.lat + '+' + this.lon;
             // this.mapSource = 'https://www.google.com/maps/embed/v1/view?key=' + this.apiKey + '&center=' + this.lat + '+' + this.lon + '&zoom=15';
