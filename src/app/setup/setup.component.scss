@@ -30,3 +30,9 @@ input{
   padding: 0.2rem;
 
 }
+
+@media screen and (max-width: 699px){
+  .form{
+    width:100%;
+  }
+}
