@@ -11,5 +11,5 @@ export class DirectionClassPipe implements PipeTransform {
       } else {
           return 'coming';
       }
-
+  }
 }

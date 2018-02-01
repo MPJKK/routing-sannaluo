@@ -1,6 +1,6 @@
 
 
-<h1>{{route}}</h1>
+<h1><i class="material-icons">directions_bus</i> {{route}}</h1>
 
 <div class="routes">
     <div class="thisStop">
@@ -10,7 +10,9 @@
         <ul>
             <li *ngFor="let reitti of reittiTaulukko">
                 <a [href] = "placeUrl">{{reitti.name}}</a>
-                <p><span [class]="reitti.directionId | directionClass">{{reitti.directionId | routeDirection}}{{reitti.route.longName}}</span></p>
+                <p><span [class]="reitti.directionId | directionClass">
+                    <mat-icon>{{reitti.directionId | routeDirection}}</mat-icon>
+                    {{reitti.route.longName}}</span></p>
             </li>
         </ul>
     </div>

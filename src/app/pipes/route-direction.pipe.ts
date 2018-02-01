@@ -7,9 +7,9 @@ export class RouteDirectionPipe implements PipeTransform {
 
     transform(value: any, args?: any): any {
         if (value === 0) {
-            return 'Going to ';
+            return 'call_made';
         } else {
-            return 'Coming from ';
+            return 'call_received';
         }
     }
 

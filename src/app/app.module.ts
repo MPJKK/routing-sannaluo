@@ -13,6 +13,8 @@ import {DigitransitService} from './services/digitransit.service';
 import { AgmCoreModule } from '@agm/core';
 import { RouteDirectionPipe } from './pipes/route-direction.pipe';
 import { DirectionClassPipe } from './pipes/direction-class.pipe';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { DirectionClassPipe } from './pipes/direction-class.pipe';
       FormsModule,
       AgmCoreModule.forRoot({
           apiKey: 'AIzaSyC0_usCoiEv-aH2LFGuugwexfjZYcsrUcs'
-      })
+      }),
+    BrowserAnimationsModule,
+      MatIconModule
   ],
   providers: [DigitransitService],
   bootstrap: [AppComponent]
